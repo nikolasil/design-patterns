@@ -46,7 +46,7 @@ public class BuilderPattern {
                 .build();
         System.out.println("Intermediate " + intermediateUser);
 
-        User adminUser = new User.Director()
+        User adminUser = new User.Director(builder)
                 .makeAdminUser()
                 .build();
         System.out.println("Admin " + adminUser);
